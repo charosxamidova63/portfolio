@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charos Xamidova — Portfolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-inner">
+      <a href="#" class="logo">Charos<span>.</span></a>
+      <button class="theme-btn" id="themeBtn" title="Dark/Light mode"></button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrapper">
+      <div class="hero-tag">
+        <div class="dot"></div>
+        Frontend Developer
+      </div>
+      <h1 class="hero-name">
+        Charos<br>
+        <span class="highlight">Xamidova</span>
+      </h1>
+      <p class="hero-sub">Mini Portfolio</p>
+      <p class="hero-desc">
+        Uchta loyiha — uchta imkoniyat.<br>
+        HTML, CSS va JavaScript bilan qurilgan real ilovalar.
+      </p>
+      <div class="scroll-hint">
+        <div class="scroll-line"></div>
+        Loyihalarni ko'rish
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="wrapper">
+      <div class="section-header observe-me">
+        <span class="section-num">// 01</span>
+        <h2 class="section-title">Loyihalar</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Calculator -->
+        <a href="https://charosxamidova63.github.io/calculator/" target="_blank"
+          class="project-card card-calc observe-me" onclick="openModal(event, 'calc')">
+          <div class="card-icon">🧮</div>
+          <span class="card-tag">Web App</span>
+          <h3 class="card-title">Calculator</h3>
+          <p class="card-desc">
+            Asosiy arifmetik amallarni bajaruvchi zamonaviy kalkulyator. Toza dizayn va qulay interfeys.
+          </p>
+          <div class="card-stack">
+            <span class="stack-chip">HTML</span>
+            <span class="stack-chip">CSS</span>
+            <span class="stack-chip">JavaScript</span>
+          </div>
+          <div class="card-footer">
+            <span class="card-btn">
+              Ko'rish <span class="arrow">→</span>
+            </span>
+            <span class="github-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </span>
+          </div>
+        </a>
+
+        <!-- To-Do List -->
+        <a href="https://charosxamidova63.github.io/to-do-list/" target="_blank"
+          class="project-card card-todo observe-me" onclick="openModal(event, 'todo')">
+          <div class="card-icon">✅</div>
+          <span class="card-tag">Productivity</span>
+          <h3 class="card-title">To-Do List</h3>
+          <p class="card-desc">
+            Vazifalarni boshqarish uchun qulay ilova. Qo'shish, o'chirish va bajarilgan deb belgilash imkoniyati.
+          </p>
+          <div class="card-stack">
+            <span class="stack-chip">HTML</span>
+            <span class="stack-chip">CSS</span>
+            <span class="stack-chip">JavaScript</span>
+          </div>
+          <div class="card-footer">
+            <span class="card-btn">
+              Ko'rish <span class="arrow">→</span>
+            </span>
+            <span class="github-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </span>
+          </div>
+        </a>
+
+        <!-- Contact List -->
+        <a href="https://charosxamidova63.github.io/contact-list/" target="_blank"
+          class="project-card card-contact observe-me" onclick="openModal(event, 'contact')">
+          <div class="card-icon">📇</div>
+          <span class="card-tag">Utility</span>
+          <h3 class="card-title">Contact List</h3>
+          <p class="card-desc">
+            Kontaktlarni saqlash va boshqarish uchun ilova. Qidirish va tartibga solish funksiyalari bilan.
+          </p>
+          <div class="card-stack">
+            <span class="stack-chip">HTML</span>
+            <span class="stack-chip">CSS</span>
+            <span class="stack-chip">JavaScript</span>
+          </div>
+          <div class="card-footer">
+            <span class="card-btn">
+              Ko'rish <span class="arrow">→</span>
+            </span>
+            <span class="github-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About / GitHub strip -->
+  <div class="wrapper">
+    <div class="about-strip observe-me">
+      <div class="about-text">
+        <h3>Barcha loyihalar GitHubda 🚀</h3>
+        <p>Kodni ko'rish, o'rganish yoki fork qilish uchun GitHub profilimga tashrif buyuring. Har bir loyiha
+          open-source!</p>
+      </div>
+      <a href="https://github.com/charosxamidova63" target="_blank" class="github-big">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+        GitHub Profilim
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrapper">
+      <p>Tayyorladi <span>Charos Xamidova</span> · 2025 · HTML, CSS, JS</p>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-icon" id="modalIcon">🧮</div>
+      <h2 class="modal-title" id="modalTitle">Calculator</h2>
+      <p class="modal-desc" id="modalDesc">Loyihani yangi sahifada ochmoqchimisiz?</p>
+      <div class="modal-actions">
+        <a href="#" id="modalLink" target="_blank" class="btn-primary">Ha, ochish →</a>
+        <button class="btn-ghost" onclick="closeModal()">Yopish</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
